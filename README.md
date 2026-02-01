@@ -1,7 +1,11 @@
 # wpDiscuz-7.0.4-PoC-RCE
 
-- wpDiscuz 7.0.4 - Unauthenticated RCE
+- wpDiscuz 7.0.4 - Unauthenticated Arbitrary File Upload leading to Remote Code Execution
 - Exploit Autor: Carlos Tuma - Bl4dsc4n
+- OWASP: A03 – Injection
+- CWE: CWE-434 – Unrestricted Upload of File with Dangerous Type
+- CVSS v3.1: 9.8 (Critical)
+- Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 - CVE-2020-24186
 - WordPress 6.9
 - Debian GNU/Linux 10
