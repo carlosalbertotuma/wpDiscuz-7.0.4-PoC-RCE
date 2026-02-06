@@ -41,6 +41,7 @@ def banner():
     print("=" * 60)
     print("[*] wpDiscuz 7.0.4 – Unauthenticated RCE")
     print("[*] CVE-2020-24186")
+    print("[*] Exploit Autor: Carlos Tuma - Bl4dsc4n")
     print("[*] Docker / Linux exploit")
     print("=" * 60)
 
