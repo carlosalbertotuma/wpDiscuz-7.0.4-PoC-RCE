@@ -2,7 +2,7 @@
 # wpDiscuz 7.0.4 - Unauthenticated RCE
 # Exploit Autor: Carlos Tuma - Bl4dsc4n
 # CVE-2020-24186
-# Docker / Linux compatible
+# Docker / Linux / windows - compatible
 # Modes:
 #  - Command execution
 #  - Reverse shell (/bin/sh)
