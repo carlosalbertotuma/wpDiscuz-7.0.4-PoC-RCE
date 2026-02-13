@@ -99,7 +99,6 @@ if(isset($_GET['cmd'])){
         print(json.dumps(j, indent=2))
         sys.exit(1)
 
-    # 🔥 EXTRAÇÃO REAL (wpDiscuz moderno)
     data_j = j.get("data", {})
     shell_url = None
 
